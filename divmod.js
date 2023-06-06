@@ -1,5 +1,4 @@
 function divmod(end, sor) {
-  let toReturn = [Math.floor(end / sor), null];
-  toReturn[1] = end - toReturn[0] * sor;
-  return toReturn;
+    const tmp = Math.floor(end / sor);
+    return [tmp, end - tmp * sor];
 }
